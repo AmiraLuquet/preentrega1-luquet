@@ -1,20 +1,22 @@
 
 import './App.css';
+import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer"
+import NavBar from "./componentes/NavBar/NavBar"
+import image from "../src/zapatillas.png"
+
+const stilo = {
+ marginLeft: "35%",
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <NavBar/>
+    <ItemListContainer/>
+    <div>
+      <img src={image} style={stilo}/>
     </div>
+    </>
   );
 }
 
